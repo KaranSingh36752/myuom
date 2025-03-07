@@ -55,6 +55,16 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#project-structure">Project Structure</a></li>
+    <li><a href="#development">Development</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -65,14 +75,90 @@
 
 ## About The Project
 
-The myUoM app is a project of the Open Software Team of Applied Informatics, University of Macedonia (https://opensource.uom.gr).
+The myUoM app is a project of the Open Software Team of Applied Informatics, University of Macedonia (https://opensource.uom.gr).
 It was designed to facilitate students' daily interactions with the university.
+
+This project serves as a centralized platform for students and faculty, providing:
+- A modern and intuitive user interface for accessing university services
+- Real-time updates from official university sources
+- A scalable backend architecture
+- Integration capabilities for other universities
+- Content Management System (CMS) for managing dynamic content
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
 - [![React][react.js]][react-url]
+- [![Chakra UI][chakra.js]][chakra-url]
+- [![Docker][docker.js]][docker-url]
+- [![Node.js][node.js]][node-url]
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (>=14.21.3)
+- npm
+- Docker (optional, for containerization)
+
+### Installation
+
+1. Clone the repository
+   ```sh
+   git clone https://github.com/Open-Source-UoM/MyUoM.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Start the development server
+   ```sh
+   npm start
+   ```
+
+For Docker deployment:
+```sh
+docker-compose up -d
+```
+
+## Features
+
+- **Authentication System**: Secure login and user management
+- **Real-time Updates**: Integration with university news and announcements
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **Multi-language Support**: Internationalization ready
+- **CMS Integration**: Easy content management for administrators
+- **Scalable Architecture**: Ready for multiple university deployments
+
+## Project Structure
+
+```
+myUoM/
+├── src/               # Source files
+├── public/           # Static files
+├── docs/            # Documentation
+├── nginx/           # Nginx configuration
+├── docker-compose.yml # Docker compose configuration
+├── Dockerfile       # Docker configuration
+└── package.json     # Project dependencies and scripts
+```
+
+## Development
+
+### Available Scripts
+
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run format` - Formats code using Prettier
+
+### Coding Standards
+
+- We use Prettier for code formatting
+- Follow the React best practices and conventions
+- Write meaningful commit messages
+- Document new features and changes
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,3 +211,9 @@ Project Link: [https://github.com/Open-Source-UoM/MyUoM](https://github.com/Open
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [react.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [react-url]: https://reactjs.org/
+[chakra.js]: https://img.shields.io/badge/Chakra_UI-319795?style=for-the-badge&logo=chakra-ui&logoColor=white
+[chakra-url]: https://chakra-ui.com/
+[docker.js]: https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white
+[docker-url]: https://www.docker.com/
+[node.js]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
+[node-url]: https://nodejs.org/
